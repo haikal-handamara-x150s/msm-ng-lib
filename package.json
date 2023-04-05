@@ -7,7 +7,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:lib:core": "ng build core",
+    "build:lib:core:watch": "ng build core --watch",
+    "build:lib:createappointment": "ng build create-appointment",
+    "build:lib:createappointment:watch": "ng build create-appointment --watch",
+    "postinstall": "npm run build:lib:core && build:lib:createappointment"
   },
   "private": true,
   "dependencies": {

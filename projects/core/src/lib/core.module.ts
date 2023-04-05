@@ -5,6 +5,6 @@ import { CoreService } from './core.service';
   declarations: [],
   imports: [],
   providers: [CoreService],
-  exports: [CoreService],
+  exports: [],
 })
 export class CoreModule { }

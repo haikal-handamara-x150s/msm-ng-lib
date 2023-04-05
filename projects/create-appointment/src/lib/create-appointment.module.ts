@@ -11,7 +11,6 @@ import { CreateAppointmentService } from './create-appointment.service';
   ],
   exports: [
     CreateAppointmentComponent,
-    CreateAppointmentService,
   ],
 })
 export class CreateAppointmentModule { }

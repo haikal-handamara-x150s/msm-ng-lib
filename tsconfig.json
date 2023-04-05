@@ -19,11 +19,17 @@
       "dom"
     ],
     "paths": {
-      "create-appointment": [
+      "@msm-lib/create-appointment": [
         "dist/create-appointment"
       ],
-      "create-appointment/*": [
+      "@msm-lib/create-appointment/*": [
         "dist/create-appointment/*"
+      ],
+      "@msm-lib/core": [
+        "dist/core"
+      ],
+      "@msm-lib/core/*": [
+        "dist/core/*"
       ]
     }
   }

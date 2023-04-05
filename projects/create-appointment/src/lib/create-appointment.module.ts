@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CreateAppointmentComponent } from './create-appointment.component';
+import { CreateAppointmentService } from './create-appointment.service';
 
 @NgModule({
   declarations: [CreateAppointmentComponent],
   imports: [
   ],
-  exports: [CreateAppointmentComponent]
+  providers: [
+    CreateAppointmentService,
+  ],
+  exports: [
+    CreateAppointmentComponent,
+    CreateAppointmentService,
+  ],
 })
 export class CreateAppointmentModule { }

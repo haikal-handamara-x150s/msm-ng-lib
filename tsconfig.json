@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "create-appointment": [
+        "dist/create-appointment"
+      ],
+      "create-appointment/*": [
+        "dist/create-appointment/*"
+      ]
+    }
   }
 }

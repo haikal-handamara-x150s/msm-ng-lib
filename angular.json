@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "create-appointment": {
+      "root": "projects/create-appointment",
+      "sourceRoot": "projects/create-appointment/src",
+      "projectType": "library",
+      "prefix": "msm-lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/create-appointment/tsconfig.lib.json",
+            "project": "projects/create-appointment/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/create-appointment/src/test.ts",
+            "tsConfig": "projects/create-appointment/tsconfig.spec.json",
+            "karmaConfig": "projects/create-appointment/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/create-appointment/tsconfig.lib.json",
+              "projects/create-appointment/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "msm-ng-lib"
